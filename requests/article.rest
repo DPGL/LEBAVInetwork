@@ -1,0 +1,17 @@
+GET http://localhost:5000/articles
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOWRmZmU4NjZiYzU2MjhiYTQ0YThlMyIsInVpZCI6ImZjMjE4OTNlLWRlOWEtNDJkZC1hY2JjLThmODdkYTIwMDg5NCIsImlhdCI6MTYzNzc0NDgyNSwiZXhwIjoxNjM3ODMxMjI1fQ.PYlRIq1A_sexicSF_xR_95P1h8vqbWnl5CWsgh3MY3w; Path=/; HttpOnly; Secure; SameSite=Lax
+uid: fc21893e-de9a-42dd-acbc-8f87da200894
+###
+POST http://localhost:5000/articles
+Content-Type: application/json
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOWRmZmU4NjZiYzU2MjhiYTQ0YThlMyIsInVpZCI6ImZjMjE4OTNlLWRlOWEtNDJkZC1hY2JjLThmODdkYTIwMDg5NCIsImlhdCI6MTYzNzc0NDgyNSwiZXhwIjoxNjM3ODMxMjI1fQ.PYlRIq1A_sexicSF_xR_95P1h8vqbWnl5CWsgh3MY3w; Path=/; HttpOnly; Secure; SameSite=Lax
+uid: fc21893e-de9a-42dd-acbc-8f87da200894
+
+{
+    "title": "MongoDB"
+}
+###
+GET http://localhost:5000/articles/619ce29306c710343a345eab
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOWQwY2Q0MGVlNDllYzdhYjFiYmJmZCIsInVpZCI6ImM2MmFiOTlkLTNlOTQtNDEzNy1hYWE1LTNmZjgwNmI3ZjgzZCIsImlhdCI6MTYzNzY4MjQxMCwiZXhwIjoxNjM3NzY4ODEwfQ.5Kv_o0KQ8vSHJX9B4ybNlyFrsvNktAnQCES_l7Bix4g; Path=/; HttpOnly; Secure; SameSite=Lax
+uid: c62ab99d-3e94-4137-aaa5-3ff806b7f83d
+###

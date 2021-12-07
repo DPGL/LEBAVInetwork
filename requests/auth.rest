@@ -1,0 +1,17 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "email": "adel@m.com",
+    "pseudo": "yes",
+    "password": "sey",
+    "role": "ADMIN"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "pseudo": "author",
+    "password": "author"
+}
