@@ -1,7 +1,7 @@
 import http from 'http'
 import dotenv from 'dotenv'
 import express from 'express';
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 
 import root from "./routes";
