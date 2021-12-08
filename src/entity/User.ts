@@ -23,7 +23,8 @@ const UserSchema = new Schema({
             message: '{VALUE} is not allowed'
         }
     },
-    articles: [{ type: Schema.Types.ObjectId, ref: 'Article' }]
+    articles: [{ type: Schema.Types.ObjectId, ref: 'Article' }],
+    friendList:[{ type: Schema.Types.ObjectId, ref: 'User' }]
 }, {
     timestamps: true
 });
