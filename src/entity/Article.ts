@@ -6,7 +6,9 @@ const ArticleSchema: Schema = new Schema({
         required: true,
         unique: true
     },
-    author: { type: Schema.Types.ObjectId, required: true, ref: 'User'}
+    author: { type: Schema.Types.ObjectId, required: true, ref: 'User'},
+    statut:{type: String, required: true, default: "Public"},
+    description:{type: String}
 }, {
     timestamps: true
 });

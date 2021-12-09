@@ -11,7 +11,7 @@ export class AddFriendContoller {
             if (id != user.id) {
                 const futurFriend = await User.findById(id)
                 const friend = new RequestToUser({"fromUser":futurFriend.id,"toUser":user.id})
-                const result = await friend.save()
+                await friend.save()
                 console.log("Moi : "+user.id);
                 console.log("Future ami : "+futurFriend.id);
                 
@@ -68,7 +68,6 @@ export class AddFriendContoller {
         const me = await User.findById(user.id)
         const friend = await User.findById(me.friendList)
         
-
         try {
             let filteredMe = await me.friendList.filter(friend => {
                 if (friend == id) {
@@ -81,9 +80,7 @@ export class AddFriendContoller {
                     console.log(me);
                     friend.friendList.remove(me);
                 }
-                
             })
-            
 
             await me.save();
             await friend.save();
