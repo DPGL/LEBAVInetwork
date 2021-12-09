@@ -7,8 +7,9 @@ const router = Router();
 router.get('/', UserController.read)
 
 router.get('/list', AddFriendContoller.list)
-router.delete('/list/:id', AddFriendContoller.delete)
+router.delete('/demand/:id', AddFriendContoller.delete)
 router.get('/accept/:id', AddFriendContoller.accept)
+router.delete('/remove/:id', AddFriendContoller.remove)
 
 router.get('/:id', UserController.read)
 

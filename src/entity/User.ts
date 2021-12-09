@@ -24,7 +24,7 @@ const UserSchema = new Schema({
         }
     },
     articles: [{ type: Schema.Types.ObjectId, ref: 'Article' }],
-    friendList:[{ type: Schema.Types.ObjectId, ref: 'User' }]
+    friendList:[{ type: Schema.Types.ObjectId, ref: 'User',unique: true }]
 }, {
     timestamps: true
 });
